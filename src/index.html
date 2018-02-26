@@ -1,13 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html >
+  <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title>ParticleJS - Default Values</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+     }
+     canvas {
+       display: block;
+     }
+   #particles-js {
+     width: 100%;
+     height: 100%;
+     background: cornflowerblue;
+     /* 背景色（不要设置为白色，因为粒子默认是白色） */
+   }
+</style>
 </head>
+ 
 <body>
-  <p><a href="/ace">ace admin</a></p>
-  <p><a href="/aceadmin131">ace admin 1.3.1</a></p>
-  <p><a href="/aceadmin140">ace admin 1.4.0</a></p>
-  <p><a href="/software">software</a></p>
-</body>
+  <!-- 用来包含粒子的DOM元素 -->
+  <div id="particles-js"></div>
+  <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+  <script>
+    particlesJS(); //初始化库并使用默认参数创建一个基本的粒子系统
+  </script>
+  </body>
 </html>
